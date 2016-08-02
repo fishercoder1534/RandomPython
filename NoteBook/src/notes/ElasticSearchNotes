@@ -1,0 +1,12 @@
+Tried Elastic search today, really cool!
+Brew is awesome!
+
+Followed this post: http://stackoverflow.com/questions/22850247/installing-elasticsearch-on-osx-mavericks
+
+Two commands get it done:
+brew update
+brew install elasticsearch
+
+then type
+curl -X GET http://localhost:9200/
+you could see it up! Nice!
