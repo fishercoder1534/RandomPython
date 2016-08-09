@@ -1,0 +1,7 @@
+TODO: install virtenv on my Mac and move this to a Python package
+
+date,systolic pressure, diastolic pressure, heart rate(bps), weight(lbs)
+
+2016-08-09,129,73,63,152.0 
+2016-08-09,132,77,62,152.0 
+2016-08-09,128,78,66,152.0 
