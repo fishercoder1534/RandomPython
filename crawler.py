@@ -36,15 +36,16 @@ if previous_count != total:
 	f = open(Leetcode_count_file, 'w')
 	f.write(str(total))
 
-	fromaddr = "sunxx762@umn.edu"
-	toaddr = "steve.j.sun@gmail.com"
+	fromaddr = XXXX
+	fromaddrPassword = YYYY
+	toaddr = ZZZZ
 
 	# server = smtplib.SMTP('smtp.gmail.com', 587)
 	server = smtplib.SMTP_SSL('smtp.gmail.com:465')
 	# server.ehlo()#this line is not needed! If uncommented, it'll throw exception!
 	# server.starttls()#this line is not needed! If uncommented, it'll throw exception!
 	# server.login("steve.j.sun@gmail.com", "Betrieber304")
-	server.login(fromaddr, "Ada@2017")#I've enabled less secure apps for this account, so it might now work on other accounts
+	server.login(fromaddr, fromaddrPassword)#I've enabled less secure apps for this account, so it might now work on other accounts
 
 	msg = MIMEMultipart()
 	msg['From'] = fromaddr
@@ -57,7 +58,6 @@ if previous_count != total:
 	body += str(total)
 	msg.attach(MIMEText(body, 'plain'))
 	text = msg.as_string()
-	# server.sendmail("steve.j.sun@gmail.com", "sunxx762@umn.edu", text)#this works
 	server.sendmail(fromaddr, toaddr, text)
 	server.quit()
 
