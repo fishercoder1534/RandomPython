@@ -4,8 +4,8 @@ import requests
 import os
 import json
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
+import email.MIMEMultipart
+import email.MIMEText
 
 print "Hello World!"
 
