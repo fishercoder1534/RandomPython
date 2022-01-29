@@ -36,4 +36,16 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # this is a nested list: a list of l
 first_col = [row[0] for row in matrix]
 print("first_col is: ", first_col)
 
+s = 'django'
+print(s[0])
+print(s[-1])
+print(s[:4])
+print(s[1:4])
+print(s[4:])
+
+var = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+# [] means a list, {} means a dict,
+# so there is list inside the dict and inside list and inside dict. ^ ^
+print("printing out var from nested dict: ", var['k1'][0]['nest_key'][1])
+
 print("Program finished!")
