@@ -1,5 +1,5 @@
 # How to run this program:
-# In terminal, run $python3 level_one.py
+# In terminal, run $python3 dict.py
 
 print("Hello world!")
 
