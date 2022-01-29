@@ -9,4 +9,7 @@ print("After encoding with UTF-8, x: ", txt.encode())  # without specifiying enc
 
 print("After encoding with ascii, x: ", txt.encode(encoding="ascii",errors="namereplace"))
 
+for _ in range(10):
+    print("Hello world!")
+
 print("Program finished!")
