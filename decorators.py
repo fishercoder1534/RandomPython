@@ -12,3 +12,10 @@ def simple_func():
 
 
 simple_func()
+
+
+def hello(name="Steve"):
+    return "Hello " + name
+
+
+print(hello())
