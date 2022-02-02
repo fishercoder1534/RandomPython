@@ -1,5 +1,6 @@
 # How to run this program:
 # In terminal, run $python3 hello.py
+import functools
 
 print("Hello world!")
 
@@ -25,3 +26,10 @@ var = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 print("printing out var from nested dict: ", var['k1'][0]['nest_key'][1])
 
 print("Program finished!")
+
+
+def add(a, b):
+    return a * b
+
+
+print(functools.reduce(add, [1, 2, 3]))
