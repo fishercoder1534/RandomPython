@@ -1,6 +1,6 @@
 # How to run this program:
 # In terminal, run $python3 hello.py
-import functools
+import functools, os
 
 print("Hello world!")
 
@@ -33,3 +33,7 @@ def add(a, b):
 
 
 print(functools.reduce(add, [1, 2, 3]))
+
+
+print(__file__)  # this prints out the absolute path of this current file on this machine.
+print(os.path.abspath(__file__))
