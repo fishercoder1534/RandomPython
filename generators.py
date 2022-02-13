@@ -62,7 +62,8 @@ def simple_gen():
 for number in simple_gen():
     print(number)
 
-g = simple_gen()
+g = simple_gen() # this creates a generator object and very memory efficient,
+# it won't hold anything extra in memory until next(g) is called
 print(g)
 print(next(g))
 print(next(g))
@@ -74,6 +75,7 @@ s = 'hello'
 # for letter in s:
 #     print(letter)
 
+# iter() is way to iterate over sequences
 s_iter = iter(s)
 print(next(s_iter))
 print(next(s_iter))
