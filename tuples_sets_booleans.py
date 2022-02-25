@@ -40,3 +40,22 @@ print("uniq: ", uniq)
 
 for i in range(5):
     print("i is: ", i)
+
+
+# The tuple() builtin can be used to create tuples in Python.
+# In Python, a tuple is an immutable sequence type.
+# One of the ways of creating tuple is by using the tuple() construct.
+t1 = tuple()
+print('t1 =', t1)
+
+# creating a tuple from a list
+t2 = tuple([1, 4, 6])
+print('t2 from a list =', t2)
+
+# creating a tuple from a string
+t1 = tuple('Python')
+print('t1 from a string =', t1)
+
+# creating a tuple from a dictionary
+t1 = tuple({1: 'one', 2: 'two'})
+print('t1 from a dict =', t1)
