@@ -1,5 +1,7 @@
 # How to run this program:
 # In terminal, run $python3 hello.py
+
+
 import functools, os
 
 print("Hello world!")
@@ -37,3 +39,15 @@ print(functools.reduce(add, [1, 2, 3]))
 
 print(__file__)  # this prints out the absolute path of this current file on this machine.
 print(os.path.abspath(__file__))
+
+
+def main():
+    print("Hello World!")
+    file_content = "72324970,abc,def\n72324990,ghi,123\n"
+    lines = file_content.splitlines()
+    for i, line in enumerate(lines):
+        print('line[{}] = {}'.format(i, line))
+
+
+if __name__ == "__main__":
+    main()
