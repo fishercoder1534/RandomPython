@@ -19,3 +19,17 @@ my_dict['key5'] = 'new item'
 print("my_dict: ", my_dict)
 
 print("Program finished!")
+
+
+def main():
+    print("Hello World!")
+    r_key = "123"
+    metric_name = "great_metric"
+    validation_result_dict = {r_key: ("good", "")}
+    update_dict = {r_key: ["bad", "bad_{}".format(metric_name)]}
+    validation_result_dict.update(update_dict)
+    print("validation_result_dict is: {}".format(validation_result_dict))
+
+
+if __name__ == "__main__":
+    main()
