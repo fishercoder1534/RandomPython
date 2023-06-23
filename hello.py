@@ -1,8 +1,8 @@
 # How to run this program:
 # In terminal, run $python3 hello.py
 
-
 import functools, os
+import datetime
 
 print("Hello world!")
 
@@ -47,6 +47,11 @@ def main():
     lines = file_content.splitlines()
     for i, line in enumerate(lines):
         print('line[{}] = {}'.format(i, line))
+
+    # below three lines show the difference of a timestamp and a human readable date and how to get them in Python
+    now = datetime.datetime.now()
+    print("now.strftime(\"%Y-%m-%d %H:%M:%S\") is: {}".format(now.strftime("%Y-%m-%d %H:%M:%S")))
+    print("now.timestamp() is: {}".format(int(now.timestamp())))
 
 
 if __name__ == "__main__":
